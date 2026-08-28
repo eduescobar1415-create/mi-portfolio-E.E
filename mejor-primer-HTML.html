@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title>Portofolio de Eduardo Escobar</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+        <!-- vamos a arrancar por el header-->
+         <h1>Creando mejor version que la primera</h1>
+         <p>Bienvenidos al sitio</p>
+        </header>
+        <!-- seguimos con el nav que es como un navegador que te lleva a diferentes sitios de la pagina-->
+        <nav>
+            <ul>
+                <li><a href="#Sobre mi">Sobre mi</a></li>
+                <li><a href="#Progreso Carrera">Progreso Carrera</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Redes Sociales">Adicional</a></li>
+            </ul>
+        </nav>
+        <main>
+            <!--Un poco sobre mi-->
+            <section id="Sobre mi">
+                <h2>Sobre mi</h2>
+                <img
+                src="imagenes/Pibble amén.jpeg"
+                alt="Foto de mi ser"
+                width="250">
+                <p>Me llamo Eduardo Escobar tengo 21 años y estoy en la Tecnicatura en Programacion
+                    ademas que estoy cursando materias de 2do año y una de 1er año
+                </p>
+
+                <h3>Top de artistas que escucho mas seguido actualmente</h3>
+                <ol>
+                    <li>Tini</li>
+                    <li>AHYRE</li>
+                    <li>Carafea</li>
+                    <li>Maria Becerra</li>
+                    <li>Cazzu</li>
+                </ol>
+            </section>
+            <!--Cracion de tablas para ver mi progreso-->
+            <section id="Progreso Carrera">
+                <h2>Progreso Carrera</h2>
+                <table border="1">
+                    <caption>Materias regulares</caption>
+                    <thead>
+                        <tr>
+                            <th>Materia</th>
+                            <th>Regularizada</th>
+                            <th>Final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Elementos de Programacion</td>
+                            <td>2024</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Matematica para Informatica</td>
+                            <td>2023</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Programacion</td>
+                            <td>2025</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Analisis Matematico</td>
+                            <td>2025</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Programacion Orientada a Objetos</td>
+                            <td>2026</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="Proyectos">
+                <h2>Proyecto</h2>
+                <h3>Mi primer trabajo en HTML</h3>
+                <article>
+                    <p>A continuacion voy a mostrar el primer avance que tuve
+                        con respecto a HTML en el curso
+                    </p>
+                    <a href="primer-holamundo-HTML.html">ver el proyecto</a>
+                </article>
+            </section>
+            <section id="Redes Sociales">
+                <h2>Redes Sociales</h2>
+                <figure>
+                    <img
+                    src="imagenes/Eduardo.jpeg"
+                    width="300">
+                    <figcaption>Este soy yo</figcaption>
+                </figure>
+                <p>Escribime a mi correo <a href="mailto:eduescobar1415@gmail.com">eduescobar1415@gmail.com</a>
+                    o dejame algun mensaje aca abajo
+                </p>
+                <form>
+                    <fieldset>
+                        <legend>Tus Datos</legend>
+                        <p>
+                            <label for="nombreyapellido">Nombre y Apellido</label>
+                            <input type="text" id="nombreyapellido" placeholder="Pepito" required>
+                        </p>
+                        <p>
+                            <label for="Email">email</label>
+                            <input type="Email" id="Email" placeholder="@gmail.com" required>                   
+                        </p>
+                        <p>
+                            <label for="Celular">Celular</label>
+                            <input type="Celular" id="Celular" placeholder="3875555555" required>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Tu mensaje</legend>
+                        <p>
+                            <label for="Asunto">Asunto</label>
+                            <br>
+                            <select name="asunto" id="asunto">
+                                <option value="Trabajo">Trabajo</option>
+                                <option value="Consulta">Consulta</option>
+                                <option value="Otro motivo">Otro motivo</option>
+                            </select>
+                        </p>
+                        <p>
+                            ¿Como preferis recibir la respuesta?
+                            <br>
+                            <input type="radio" id="por email" name="medio" value="email" checked>
+                            <label for="por email">por correo</label>
+                            <input type="radio" id="por celular" name="medio" value="celular" checked>
+                            <label for="por celular">por celular</label>
+                        </p>
+                    </fieldset>
+
+                </form>
+
+            </section>
+
+
+
+
+
+
+
+
+        </main>
+
+    </body>
+</html>

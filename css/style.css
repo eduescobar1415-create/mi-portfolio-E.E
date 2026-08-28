@@ -1,0 +1,228 @@
+:root{
+    --color-letras: rgb(12,12,12);
+    --color-fondo: #dfaf71;
+    --color-principal: #ac9211;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(135deg, #e08535 0%, #c7d04f 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--color-letras);
+
+}
+.header{
+    background: linear-gradient(135deg, var(--color-principal)30%, white 100%);
+    margin-top: 10px;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    color: var(--color-letras);
+    border-radius: 20%;
+
+}
+.titulo{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.subtitulo{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.navegador-principal{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+.recorrido{
+    border-radius: 10px;
+    padding: 5px;
+    color: var(--color-letras);
+}
+.recorrido:hover{
+    background-color:rgb(186, 186, 26);
+}
+.principal{
+    text-align: center;
+}
+.seccion{
+    margin-top: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, olive 0%, white 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #8b5a2b;
+}
+.imagen-mia{
+    height: 240px;
+    width: 240px;
+    border-radius: 40%;
+    margin-bottom: 25px;
+}
+.descripcion{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 25px;   
+}
+#inicio{
+    text-align: center;
+}
+.boton{
+    display: inline-block; 
+    background-color: rgb(8, 148, 22);
+    color: var(--color-letras);
+    padding: 12px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.boton:hover{
+    transform: translateY(-2px);
+}
+.contenedor-cajas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap:20px;
+    padding: 10px 0;
+}
+.armado{
+    background: linear-gradient(145deg, rgb(173, 179, 5)0%, white 100%);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    
+}
+.armado-body a {
+    display: inline-block;
+    padding: 10px 18px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: rgb(8, 148, 22);
+    color:white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+.armado-body a:hover{
+    background-color: rgb(8, 148, 22);
+    transform: translateY(-2px);
+
+}
+.armado-body h3{
+    color: #680f05;
+    border-bottom: 2px solid #d75b5b;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.lista-h{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    align-items: center;
+    justify-content: center;
+}
+.lista-h li{
+    font-size: 1rem;
+    color: #333;
+    position: relative;
+}
+.lista-h li:not(:last-child)::after{
+    content: "|";
+    margin-left: 15px;
+    color: #aaa;
+
+}
+.imagen-caja{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+#avance{
+    text-align: center;
+}
+.tabla-materias {
+  width: 50%;
+  margin:auto;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden; /* Mantiene los bordes redondeados */
+  box-shadow: 0 10px 10px rgba(18, 114, 106, 0.637);
+}
+
+.tabla-materias th {
+  background-color: #0f4a4a;
+  color: rgba(255, 255, 255, 0.484);
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla-materias td {
+  padding: 12px;
+  border-bottom: 1px solid #eeeeeea7;
+}
+
+/* Intercala el color de las filas para leer mejor */
+.tabla-materias tbody tr:nth-child(even) {
+  background-color: #f8f6f3;
+}
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.parte-formulario{
+    display: flex;
+    flex-direction: column;
+}
+.parte-formulario input,
+.parte-formulario select,
+.parte-formulario textarea{
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+
+}
+.parte-formulario input:focus,
+.parte-formulario select:focus,
+.parte-formulario textarea:focus {
+    border-color: #8b5a2b;
+    box-shadow: 0 0 0 3px rgba(139, 90, 43, 0.15);
+}
+#asunto{
+    padding: 10px;
+    border: 3px solid rgb(3, 62, 34);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #f3f0ec;
+}
+.formulario .boton{
+    grid-column: 1/2;
+    align-self: flex-end;
+}
+.final{
+    background: linear-gradient(135deg, #e08535 0%, #c7d04f 100%);
+    text-align: center;
+    padding: 15px;
+    color: var(--color-letras);
+}
